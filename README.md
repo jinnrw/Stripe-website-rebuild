@@ -2,15 +2,19 @@
 
 This is a self practice of rebuilding the [Stripe](https://stripe.com) new website with Pug, Sass and Gulp for task automation.
 
-### Note
-Use [Pug and Sass starter project](https://github.com/azemoh/gulp-pug-sass-starter) for task automation.
-
 ### This project uses:
 
-1. [browser-sync](https://github.com/browsersync/browser-sync) to launch a local server and do live reloads as sass and pug files changes
-2. [gulp-pug](https://github.com/jamen/gulp-pug) to compile pug files.
-3. [gulp-data](https://github.com/colynb/gulp-data) to pass data to pug. this project uses JSON as the data source, however you can generate data objects from a variety of sources: json, front-matter, database, etc... see gulp-data [README](https://github.com/colynb/gulp-data)
-4. [gulp-sass](https://github.com/dlmanning/gulp-sass) to compile sass files.
-5. [gulp-autoprefixer](https://github.com/sindresorhus/gulp-autoprefixer) to add vendor prefixes to css files
+1. Use [Pug and Sass starter project](https://github.com/azemoh/gulp-pug-sass-starter) for task automation.
+2. [browser-sync](https://github.com/browsersync/browser-sync) to launch a local server and do live reloads as sass and pug files changes
+3. [gulp-pug](https://github.com/jamen/gulp-pug) to compile pug files.
+4. [gulp-data](https://github.com/colynb/gulp-data) to pass data to pug. this project uses JSON as the data source, however you can generate data objects from a variety of sources: json, front-matter, database, etc... see gulp-data [README](https://github.com/colynb/gulp-data)
+5. [gulp-sass](https://github.com/dlmanning/gulp-sass) to compile sass files.
+6. [gulp-autoprefixer](https://github.com/sindresorhus/gulp-autoprefixer) to add vendor prefixes to css files
 
-### View on [CodePen](http://codepen.io/JinnRw/pen/mArxKr?editors=1100).
+### Version log:
+1. This is an ongoing project starting with mobile layout. (2016-10-2)
+
+### View on
+
+1. View the [live demo](https://htmlpreview.github.io/?https://github.com/jinnrw/Stripe-website-rebuild/blob/master/_site/index.html).
+2. View on [CodePen](http://codepen.io/JinnRw/pen/mArxKr?editors=1100).
