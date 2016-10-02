@@ -1,0 +1,70 @@
+extends _layouts/home
+
+block head_end
+	link(rel="stylesheet" href="assets/css/style.css")
+	link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css')
+
+block content
+
+	//- body Starts Here
+	//- https://stripe.com/ca
+
+	.header
+		.logo Stripe
+
+	main
+		header
+			.stripe
+				span
+				span
+				span
+
+			section.headline
+				.container-lg
+					a.announce
+						span.pill New
+						span.message
+							strong 25 countries.
+							|  Stripe is now available for all businesses in Singapore
+
+					h1 The new standard in online payments
+					p
+						| Stripe is the best software platform for running an internet business. We handle billions of dollars every year for forward-thinking businesses around the world.
+					.explore
+						a.explore-btn
+							i.fa.fa-terminal(aria-hidden='')
+							span Explroe the Stack
+
+
+		section.primary
+			section.toolkit.container-lg
+				h2.title THE COMPLETE TOOLKIT FOR INTERNET BUSINESS
+				p.body-text Stripe builds the most powerful and flexible tools for internet commerce. Whether you’re creating a subscription service, an on-demand marketplace, an e-commerce store, or a crowdfunding platform, Stripe’s meticulously-designed APIs and unmatched functionality help you create the best possible product for your users. Hundreds of thousands of the world’s most innovative technology companies are scaling faster and more efficiently by building their businesses on Stripe.
+				a.body-text.common-link Discover how businesses use Stripe
+				i.fa.fa-arrow-right(aria-hidden='true')
+			section.apps
+				.left
+					img(src='https://stripe.com/img/v3/home/app-illustrations/wish.svg')
+				.middle
+					img(src='https://stripe.com/img/v3/home/app-illustrations/slack.svg')
+				.right
+					img(src='https://stripe.com/img/v3/home/app-illustrations/bestbuy.svg')
+
+			section.dev-first.container-lg
+				h2.title DEVELOPERS FIRST
+				p.body-text We believe that payments is a problem rooted in code, not finance. We obsessively seek out elegant, composable abstractions that enable robust, scalable, flexible integrations. Because we eliminate needless complexity and extraneous details, you can get up and running with Stripe in just a couple of minutes.
+
+				section.notebook.container-lg
+					nav
+						select
+							option(value='payments') Payments
+							option(value='customers') Customers
+							option(value='subscriptions') Subscriptions
+							option(value='reporting') Reporting
+						i.fa.fa-arrows-v(aria-hidden="true")
+
+
+
+
+block body_end
+	script(type="text/javascript" src="assets/js/script.js")
