@@ -4,7 +4,7 @@ This is a self practice of rebuilding the [Stripe](https://stripe.com) new websi
 
 ### This project uses:
 
-1. Use [Pug and Sass starter project](https://github.com/azemoh/gulp-pug-sass-starter) for task automation.
+1. [Pug and Sass starter project](https://github.com/azemoh/gulp-pug-sass-starter) for task automation.
 2. [browser-sync](https://github.com/browsersync/browser-sync) to launch a local server and do live reloads as sass and pug files changes
 3. [gulp-pug](https://github.com/jamen/gulp-pug) to compile pug files.
 4. [gulp-data](https://github.com/colynb/gulp-data) to pass data to pug. this project uses JSON as the data source, however you can generate data objects from a variety of sources: json, front-matter, database, etc... see gulp-data [README](https://github.com/colynb/gulp-data)
