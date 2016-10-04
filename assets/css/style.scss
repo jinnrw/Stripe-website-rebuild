@@ -422,6 +422,8 @@ code {
   padding: 12px;
   font-size: 13px;
   line-height: 1.5;
+  overflow: auto;
+
   .code-in-line span{
     padding: 0 3px;
   }
@@ -574,7 +576,7 @@ footer {
 
  // Footer Buttons
  .footer-CTA-btn {
-   display: flex;
+   @include flex-wrap();
  }
 
 .create,
