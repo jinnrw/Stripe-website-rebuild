@@ -1,0 +1,260 @@
+extends _layouts/home
+
+block head_end
+	link(rel="stylesheet" href="assets/css/style.css")
+	link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css')
+
+block content
+
+	//- body Starts Here
+	//- https://stripe.com/ca
+
+	.header
+		ul.header-items
+			.logo
+				include _partials/logo.pug
+			li.nav-section.mobile
+				a.mobile-menu
+					h2
+
+	main
+		header
+			.stripe
+				span
+				span
+				span
+
+			section.headline
+				.container-lg
+					a.announce
+						span.pill New
+						span.message
+							strong 25 countries.
+							|  Stripe is now available for all businesses in Singapore
+
+					h1 The new standard in online payments
+					p
+						| Stripe is the best software platform for running an internet business. We handle billions of dollars every year for forward-thinking businesses around the world.
+					.explore
+						a.btn
+							i.fa.fa-terminal(aria-hidden='')
+							span Explroe the Stack
+
+
+		section.primary
+			section.toolkit.container-lg
+				//- Toolkit Icon
+				h2.icon
+					include _site/assets/img/toolkit.svg
+				h2.title THE COMPLETE TOOLKIT FOR INTERNET BUSINESS
+				p.body-text Stripe builds the most powerful and flexible tools for internet commerce. Whether you’re creating a subscription service, an on-demand marketplace, an e-commerce store, or a crowdfunding platform, Stripe’s meticulously-designed APIs and unmatched functionality help you create the best possible product for your users. Hundreds of thousands of the world’s most innovative technology companies are scaling faster and more efficiently by building their businesses on Stripe.
+				a.body-text.common-link Discover how businesses use Stripe
+					i.fa.fa-arrow-right(aria-hidden='true')
+			section.apps
+				.left
+					img(src='https://stripe.com/img/v3/home/app-illustrations/wish.svg')
+				.middle
+					img(src='https://stripe.com/img/v3/home/app-illustrations/slack.svg')
+				.right
+					img(src='https://stripe.com/img/v3/home/app-illustrations/bestbuy.svg')
+
+			section.dev-first.container-lg
+				//- Developers Icon
+				h2.icon
+					include _site/assets/img/developers.svg
+				h2.title DEVELOPERS FIRST
+				p.body-text We believe that payments is a problem rooted in code, not finance. We obsessively seek out elegant, composable abstractions that enable robust, scalable, flexible integrations. Because we eliminate needless complexity and extraneous details, you can get up and running with Stripe in just a couple of minutes.
+
+			//- Drop down & Code editor
+			section.notebook.container-lg
+				nav
+					select
+						option(value='payments') Payments
+						option(value='customers') Customers
+						option(value='subscriptions') Subscriptions
+						option(value='reporting') Reporting
+					i.fa.fa-arrows-v(aria-hidden="true")
+
+				.editor
+					pre.code-container
+						.line-num
+							|1
+							|2
+							|3
+							|4
+							|5
+							|6
+							|7
+							|8
+							|9
+							|10
+						code
+							.code-in-line
+								span(style="color: #6772e5;") const
+								span stripe =
+								span(style='color: #3297d3; font-weight: bold;') require
+								span ('stripe')('sk_test_BQokikJOvBiI2HlWgH4olfQ2');
+							.code-in-line
+								span
+							.code-in-line
+								span(style='color: #91a2b0') // Create your first payment from a test card.
+							.code-in-line
+								span(style="color: #6772e5;") const
+								span charge =
+								span(style="color: #6772e5; font-weight: bold;") await
+								span(style='padding-right:0;') stripe.charges.
+								span(style='color: #3297d3; font-weight: bold; padding-left:0;') create
+								span ({
+							.code-in-line
+								span  amount:
+								sapn(style='color: #fa755a') 2000,
+							.code-in-line
+								span  currency: 'usd',
+							.code-in-line
+								span  source: {
+							.code-in-line
+								span   number:
+								span(style='color: #159570') '4242424242424242',
+							.code-in-line
+								span  }
+							.code-in-line
+								span });
+
+		//-  Secondary Content
+		section.secondary
+				section.improve.container-lg
+					//- Always Icon
+					include _site/assets/img/always.svg
+					h2.title ALWAYS IMPROVING
+					p.body-text Stripe is an always-improving toolchain that gains new features every month. Our world-class engineering team constantly iterates upon every facet of the Stripe stack. And from Apple Pay to Bitcoin, building on Stripe means you get early access to the latest technologies.
+					a.common-link Learn about Stripe's products
+						i.fa.fa-arrow-right(aria-hidden='true')
+				section.global.container-lg
+					//- Global Icon
+					include _site/assets/img/global.svg
+					h2.title GLOBAL SCALE
+					p.body-text We help power 100,000+ businesses in 100+ countries and across nearly every industry. Headquartered in San Francisco, Stripe has 10 global offices and hundreds of people working to help transform how modern businesses are built and run.
+					a.common-link More about us
+						i.fa.fa-arrow-right(aria-hidden='true')
+
+				//- Logo Section
+				section.customer-logo.container-lg
+					a
+						ul
+							li
+								img(src='https://stripe.com/img/v3/home/customer-logos/kickstarter.svg')
+							li
+								img(src='https://stripe.com/img/v3/home/customer-logos/twitter.svg')
+							li
+								img(src='https://stripe.com/img/v3/home/customer-logos/instacart.svg')
+							li
+								img(src='https://stripe.com/img/v3/home/customer-logos/pinterest.svg')
+							li
+								img(src='https://stripe.com/img/v3/home/customer-logos/lyft.svg')
+							li
+								img(src='https://stripe.com/img/v3/home/customer-logos/shopify.svg')
+							li
+								img(src='https://stripe.com/img/v3/home/customer-logos/opentable.svg')
+							li
+								img(src='https://stripe.com/img/v3/home/customer-logos/slack.svg')
+
+
+				//-  Footer
+				footer
+					section.footer-cards.container-lg
+						a.footer-card.card-1
+							//- Card 1 Icon
+							include _site/assets/img/card-1.svg
+							h2.title See our pricing
+								i.fa.fa-arrow-right(aria-hidden='true')
+							p.body-text No setup fees, monthly fees, or hidden fees. With our predictable and transparent pricing, you’ll always know what you’ll pay.
+
+						a.footer-card.card-2
+							//- Card 2 Icon
+							include _site/assets/img/card-2.svg
+							h2.title Explore the docs
+								i.fa.fa-arrow-right(aria-hidden='true')
+							p.body-text Start building your integration and accept your first payment in minutes. Stripe libraries are available in every language from Ruby to Go.
+
+					article.footer-CTA
+						h1.title Ready to get started?
+						span.subtitle Get in touch, or create an account.
+
+						.footer-CTA-btn
+							.create
+								a.btn
+									span Create Stripe account
+							.contact
+								a.btn
+									span Contact Sales
+
+					//- Footer nav
+					article.footer-nav
+						ul.meta-nav
+							li.select
+								a Canada
+									include _site/assets/img/country.svg
+							li.select.english
+								a English
+									include _site/assets/img/country.svg
+							li.space
+							li.copyright © Stripe
+
+						.site-nav
+							.col
+								h4 products
+								.split-col
+									ul
+										a
+											li Payments
+										a
+											li Subscriptions
+										a
+											li Connect
+										a
+											li Relay
+									ul
+										a
+											li Price
+										a
+											li Customers
+										a
+											li Global
+							.col
+								h4 Developers
+								.split-col
+									ul
+										a
+											li Documentation
+										a
+											li API reference
+										a
+											li API Status
+										a
+											li Open Source
+							.col
+								h4 Company
+								.split-col
+									ul
+										a
+											li About
+										a
+											li Blog
+										a
+											li Jobs
+										a
+											li Press
+							.col
+								h4 RESOURCES
+								.split-col
+									ul
+										a
+											li Support
+										a
+											li Contact
+										a
+											li Privacy &amp; terms
+
+
+block body_end
+	script(type="text/javascript" src="assets/js/script.js")
