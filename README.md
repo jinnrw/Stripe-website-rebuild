@@ -12,7 +12,8 @@ This is a self practice of rebuilding the [Stripe](https://stripe.com) new websi
 6. [gulp-autoprefixer](https://github.com/sindresorhus/gulp-autoprefixer) to add vendor prefixes to css files
 
 ### Version log:
-1. This is an ongoing project starting with mobile layout. (2016-10-2)
+1. This is an ongoing project starting with mobile layout. (v1.0, 2016-10-2)
+2. Landing page deploy (mobile layout). (v1.1, 2016-10-3)
 
 ### View on
 
