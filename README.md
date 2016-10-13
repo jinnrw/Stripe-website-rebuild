@@ -17,5 +17,5 @@ This is a self practice of rebuilding the [Stripe](https://stripe.com) new websi
 
 ### View on
 
-View the [live demo](https://jinnrw.github.io/Stripe-website-rebuild).
+1. View the [live demo](https://jinnrw.github.io/Stripe-website-rebuild).
 
